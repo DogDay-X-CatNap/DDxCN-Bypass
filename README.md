@@ -14,3 +14,18 @@ V1.0
   [@D-CODE-INC's DISCORD MEMBERs](https://discord.gg/UVYfRqbh68)
   
 ![Return-The-Topic-Logo](https://i.ibb.co/CQtPNLL/maxresdefault-2.jpg)
+# is this mod safe?
+Yes! :100:% safe , we value your privacy!
+# Can play on **ANY** Version of blockmanGo?
+yes and no, In some versions of blockman go Blockman go devs **SHUT** down their servers because **NOBODY** can play it.
+![Return-TOpic](https://i.ibb.co/C6p707G/images-2.jpg)
+
+# Please copy and paste this in other Hack servers
+```batch
+D-CODE-INC and DDxCN on top!!!!
+```
+![Preview-of-how-our-hacks-will-looklike](https://i.ibb.co/wyT6vYy/download-9.jpg)
+
+```lua
+local a = 1; A = not A; if a then print("D-CODE-INc and DDxCN op top!!!")
+```
