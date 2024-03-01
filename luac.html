@@ -1,0 +1,107 @@
+
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Compile lua file</title>
+<style type="text/css">
+body{
+	font-family: "Lucida Grande",Calibri,Arial;
+	font-size: 9pt;
+	color: #333;
+	background: #f8f8f8;
+	background-image: url(heading.jpg);
+	background-repeat: no-repeat;
+}
+table.selectable-table td {  font-size:10pt; font-family: Arial;   }
+table.selectable-table td {  cursor:pointer;  margin:0px; border:0px; padding:2px 5px 2px 5px;   }
+table.selectable-table  {  border-spacing:0px;  background:#eef;}
+</style>
+</head>
+
+<body onload="myOnLoadFunction()">
+<script>
+document.addEventListener("keydown", mykeydownFunction);
+
+function mykeydownFunction(event) {
+	// Unhide on shift press
+/*
+	var elem = document.getElementById("debug_table");
+	if ( event.keyCode == 16 )
+	{
+		if ( elem.style.visibility == "visible" && document.getElementById("debug_checkbox").checked == false )
+			elem.style.visibility = "hidden";
+		else
+			elem.style.visibility = "visible";
+	}
+*/
+}
+
+function myOnLoadFunction(event) {
+	// Don't hide initially if checked
+/*
+	if ( document.getElementById("debug_checkbox").checked )
+		document.getElementById("debug_table").style.visibility = "visible";
+*/
+}
+
+</script>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+  
+<a href="api">API</a>
+<h1>Compile Lua file</h1>
+
+<div>
+  <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+	<table border="1" cellpadding="2" cellspacing="0">
+		<tr>
+			<td width=160>
+				Choose a file to compile:<br />
+			</td>
+			<td>
+				<input name="luasource" type="file" id="luasource" size="100"/>
+    				<input type="hidden" name="compile" value="1">
+      			</td>
+		</tr>
+        		<tr>
+			<td>
+				Extra obfuscation<br />
+			</td>
+			<td>
+			    <input type="radio" name="obfuscate" value="0" checked>0 - None</br>
+			    <input type="radio" name="obfuscate" value="1">1 - Some</br>
+			    <input type="radio" name="obfuscate" value="2">2 - More (From 1.5.2-9.07903)</br>
+			    <input type="radio" name="obfuscate" value="3">3 - Even more (From 1.5.6-9.18728)
+			</td>
+		</tr>
+  	</table>
+
+<table border="1" cellpadding="2" cellspacing="0" id="debug_table" style="visibility: hidden;">
+  		<tr>
+			<td width=160>
+				Keep debug information<br />
+			</td>
+			<td>
+				<input type="checkbox" name="debug" value="1" id="debug_checkbox">
+			</td>
+		</tr>
+  </table>
+
+	<br />
+	<input name="Submit" type="submit" id="submit" value="Submit" />
+  </form>
+  </div>
+  
+</body>
+
+</html>
