@@ -29,3 +29,5 @@ D-CODE-INC and DDxCN on top!!!!
 ```lua
 local a = 1; A = not A; if a then print("D-CODE-INc and DDxCN op top!!!")
 ```
+# MODS
+![HackLogo](https://i.ibb.co/XVWgM1R/download-10.jpg)
