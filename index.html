@@ -105,12 +105,14 @@
 <div class="container intro-animation" id="intro">
   <h1>DDxCN Bypasser</h1>
   <p>Easiest and fastest way to bypass blockmango updates, CREDITS : D-code-inc , DogdayXcatNap</p>
-  <button class="btn" onclick="download()">Download</button>
+  <button class="btn" onclick="download()">BYPASS</button>
+  <button onclick="conectserver()">CONNECT SERVER</button>
+  <button onclick="stopserver()">Stop Server</button>
 </div>
 
 <div class="container outro-animation" id="outro" style="display: none;">
   <h1>Maintenance</h1>
-  <p>This is not finish, please wait for the announcement and thanks for supporting us!</p>
+  <p>This aint finished yet... please try again later. in the mean time you can connect the servers and mess with the server</p>
 </div>
 
 <div class="theme-select">
@@ -121,6 +123,17 @@
   </select>
 </div>
 
+<!--soft spotsil dayn-->
+<script>
+    function conectserver() {
+prompt("BlockmanGo package name","com.ERASETHISTEXTANDTYPEPACKAGENAME")
+  }
+    function stopserver() {
+prompt("For how much seconds will you stop it?, max value is 9999","10")
+  }
+</script>
+  
+  
 <script>
   function showOutro() {
     document.getElementById('intro').style.animation = 'none';
