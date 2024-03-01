@@ -1,0 +1,182 @@
+<!-- Oh shit aqua, guess what? I decrypted your dang website-->
+<html>
+  <body>
+<title>DDxCN Bypass and D-cOde inc bypass</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--theme-background, #333); /* Default background color: dark gray */
+    color: var(--theme-text, #fff); /* Default text color: white */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #444; /* Container background color: gray */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--theme-header, #00FFFF); /* Default header color: cyan */
+  }
+
+  .intro-animation {
+    animation: slideIn 1s ease forwards;
+  }
+
+  .outro-animation {
+    display: none;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  }
+
+  .label {
+    background-color: var(--theme-label-bg, #00FFFF); /* Default label background color: cyan */
+    color: var(--theme-label-text, #333); /* Default label text color: gray */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    background-color: var(--theme-button-bg, #00FFFF); /* Default button background color: cyan */
+    color: var(--theme-button-text, #333); /* Default button text color: gray */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .theme-select {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .theme-dropdown {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container intro-animation" id="intro">
+  <h1>DDxCN Bypasser</h1>
+  <p>Easiest and fastest way to bypass blockmango updates, CREDITS : D-code-inc , DogdayXcatNap</p>
+  <button class="btn" onclick="download()">Download</button>
+</div>
+
+<div class="container outro-animation" id="outro" style="display: none;">
+  <h1>Maintenance</h1>
+  <p>This is not finish, please wait for the announcement and thanks for supporting us!</p>
+</div>
+
+<div class="theme-select">
+  <select class="theme-dropdown" onchange="changeTheme(this.value)">
+    <option value="cyan">Cyan Theme</option>
+    <option value="yellow">Yellow Theme</option>
+    <option value="red">Red Theme</option>
+  </select>
+</div>
+
+<script>
+  function showOutro() {
+    document.getElementById('intro').style.animation = 'none';
+    document.getElementById('intro').offsetHeight;
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('outro').style.display = 'block';
+  }
+
+  function download() {
+    showOutro();
+    document.querySelector('.theme-select').style.display = 'none';
+  }
+
+  function fadeInOptions(select) {
+    const options = select.options;
+    for (let i = 0; i < options.length; i++) {
+      options[i].style.opacity = 1;
+    }
+  }
+
+  function changeTheme(theme) {
+    const root = document.documentElement;
+    const select = document.querySelector('.theme-dropdown');
+    fadeInOptions(select);
+    switch (theme) {
+      case 'cyan':
+        root.style.setProperty('--theme-background', '#333'); /* dark gray */
+        root.style.setProperty('--theme-text', '#fff'); /* white */
+        root.style.setProperty('--theme-header', '#00FFFF'); /* cyan */
+        root.style.setProperty('--theme-label-bg', '#00FFFF'); /* cyan */
+        root.style.setProperty('--theme-label-text', '#333'); /* gray */
+        root.style.setProperty('--theme-button-bg', '#00FFFF'); /* cyan */
+        root.style.setProperty('--theme-button-text', '#333'); /* gray */
+        break;
+      case 'yellow':
+        root.style.setProperty('--theme-background', '#333'); /* dark gray */
+        root.style.setProperty('--theme-text', '#fff'); /* white */
+        root.style.setProperty('--theme-header', '#FFD700'); /* yellow */
+        root.style.setProperty('--theme-label-bg', '#FFD700'); /* yellow */
+        root.style.setProperty('--theme-label-text', '#333'); /* gray */
+        root.style.setProperty('--theme-button-bg', '#FFD700'); /* yellow */
+        root.style.setProperty('--theme-button-text', '#fff'); /* white */
+        break;
+      case 'red':
+        root.style.setProperty('--theme-background', '#333'); /* dark gray */
+        root.style.setProperty('--theme-text', '#fff'); /* white */
+        root.style.setProperty('--theme-header', '#FF6347'); /* tomato */
+        root.style.setProperty('--theme-label-bg', '#FF6347'); /* tomato */
+        root.style.setProperty('--theme-label-text', '#fff'); /* white */
+        root.style.setProperty('--theme-button-bg', '#FF6347'); /* tomato */
+        root.style.setProperty('--theme-button-text', '#fff'); /* white */
+        break;
+      default:
+        break;
+    }
+  }
+</script>
+</body>
+</html>
