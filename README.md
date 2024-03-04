@@ -2,7 +2,8 @@
 
 # DDxCN Bypass
 This is an bypass for blockmango Admin Panel!
-V1.1
+# Version : (Updates every 2 days)
+V1.2
 # Contributors
 [@D-CODE-INC](https://github.com/D-CODE-INC/D-BYPASS?tab=readme-ov-file)
 [THEIR DISCORD SERVER](https://discord.gg/UVYfRqbh68)
